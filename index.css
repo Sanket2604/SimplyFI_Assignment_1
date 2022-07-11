@@ -1,0 +1,39 @@
+body{
+    background-color: hsl(0, 5%, 22%);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
+body .box{
+    border: clamp(1.5rem, 2vw, 3rem) solid transparent;
+    font-size: clamp(2rem, 4vw, 4rem);
+    aspect-ratio: 1 / 1;
+    width: 20vw;
+    min-width: 200px;
+    transform: rotateZ(45deg);
+    display: grid;
+    place-items: center;
+    border-top-color: hsl(17, 61%, 57%);
+    border-right-color: rgb(196,189,169);
+    border-bottom-color: rgb(86,167,252);
+    border-left-color: rgb(165,215,169);
+}
+body .box .text{
+    text-align: center;
+    transform: rotateZ(-45deg);
+}
+body .box .text .subtext{
+    font-size: clamp(0.75rem, 1vw, 2rem);
+}
+body .box span{
+    color: hsl(14, 64%, 59%);
+}
+body .credit{
+    position: absolute;
+    bottom: 1.25rem;
+    color: rgb(209, 209, 209);
+}
+
